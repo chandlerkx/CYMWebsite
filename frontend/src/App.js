@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import './components/ResponsiveAppBar.js';
 import ResponsiveAppBar from './components/ResponsiveAppBar.js';
