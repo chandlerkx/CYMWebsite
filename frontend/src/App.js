@@ -1,6 +1,7 @@
 import './App.css';
 import './components/ResponsiveAppBar.js';
 import ResponsiveAppBar from './components/ResponsiveAppBar.js';
+import AboutUs from './pages/AboutUs.js';
 import Home from './pages/Home.js';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <ResponsiveAppBar/>
       <Home/>
+      <AboutUs/>
       
     </div>
   );
