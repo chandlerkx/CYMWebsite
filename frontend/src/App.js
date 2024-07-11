@@ -2,13 +2,21 @@ import './App.css';
 import './components/ResponsiveAppBar.js';
 import ResponsiveAppBar from './components/ResponsiveAppBar.js';
 import Home from './pages/Home.js';
+import About from './pages/AboutUs.js';
+import Branches from './pages/Branches.js';
+import Events from './pages/Events.js';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
+
       <ResponsiveAppBar/>
       <Home/>
-      
+      <About/>
+      <Branches/>
+      <Events/>
+      <Footer/>
     </div>
   );
 }
