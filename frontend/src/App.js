@@ -6,12 +6,13 @@ import About from './pages/AboutUs.js';
 import Branches from './pages/Branches.js';
 import Events from './pages/Events.js';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
 
-      <ResponsiveAppBar/>
+      <Header/>
       <Home/>
       <About/>
       <Branches/>
