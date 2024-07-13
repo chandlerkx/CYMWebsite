@@ -21,9 +21,10 @@ export default function Home() {
             sx={{
               color: { xs: 'black', sm: 'blue', md: 'black' },
               fontSize: { xs: '2.5rem', sm: '2rem', md: '2rem' },
-              padding: { xs: '5rem 0rem 1rem 3rem', md: '10rem 0rem 1rem 3rem' },
+              padding: { xs: '5rem 0rem 1rem 3rem', md: '6rem 0rem 1rem 3rem' },
               fontWeight: '520',
               fontFamily: 'Inter',
+              fontSize:'2.7rem'
             }}
             variant="h1"
           >
@@ -35,7 +36,7 @@ export default function Home() {
             sx={{
               color: { xs: 'black' },
               fontSize: { xs: '1.2rem' },
-              padding: '0 1rem 0.5rem 3rem',
+              padding: '0 1rem 1.5rem 3rem',
             }}
           >
             Federally incorporated and youth-led nonprofit organization. Established with a mission of supporting aspiring students in health-related fields by creating a gateway to discover knowledge, resources, and opportunities.
@@ -77,7 +78,7 @@ export default function Home() {
           marginTop: isMobile ? '2rem' : '0',
         }}
       >
-        <img src="http://via.placeholder.com/300x400" alt="Placeholder" />
+        <img style={{margin:'4rem 0 0 0rem'}} src="http://via.placeholder.com/200x300" alt="Placeholder" />
       </Box>
     </Box>
   );
