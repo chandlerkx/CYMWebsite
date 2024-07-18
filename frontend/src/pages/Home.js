@@ -12,7 +12,7 @@ export default function Home() {
         display: 'flex',
         flexDirection: isMobile ? 'column' : 'row',
         justifyContent: 'space-between',
-        padding: '2rem',
+        padding: '7rem 2rem 2rem 5rem',
       }}
     >
       <Box sx={{ flex: 1 }}>
@@ -21,10 +21,10 @@ export default function Home() {
             sx={{
               color: { xs: 'black', sm: 'blue', md: 'black' },
               fontSize: { xs: '2.5rem', sm: '2rem', md: '2rem' },
-              padding: { xs: '5rem 0rem 1rem 3rem', md: '6rem 0rem 1rem 3rem' },
+              padding: { xs: '7rem 0rem 3rem 3rem', md: '8rem 0rem 3rem 3rem' },
               fontWeight: '520',
               fontFamily: 'Inter',
-              fontSize:'2.7rem'
+              fontSize:'3.75rem'
             }}
             variant="h1"
           >
@@ -35,8 +35,8 @@ export default function Home() {
           <Typography
             sx={{
               color: { xs: 'black' },
-              fontSize: { xs: '1.2rem' },
-              padding: '0 1rem 1.5rem 3rem',
+              fontSize: { xs: '1.625rem' },
+              padding: '0 1rem 1.8rem 3rem',
             }}
           >
             Federally incorporated and youth-led nonprofit organization. Established with a mission of supporting aspiring students in health-related fields by creating a gateway to discover knowledge, resources, and opportunities.
@@ -46,8 +46,8 @@ export default function Home() {
           <Typography
             sx={{
               color: { xs: 'black' },
-              fontSize: { xs: '1.2rem' },
-              padding: '0 1rem 1rem 3rem',
+              fontSize: { xs: '1.625rem' },
+              padding: '0 1rem 2.1rem 3rem',
             }}
           >
             Since its establishment in 2021, CYM has supported over 5000 students as they embarked on their journey in the healthcare field.
@@ -57,10 +57,11 @@ export default function Home() {
           <Button
             sx={{
               backgroundColor: '#A0C1FE',
-              margin: '1rem 1rem 2rem 3rem',
-              padding: '0.5rem 3.5rem 0.5rem 3.5rem',
+              margin: '1rem 1rem 14rem 3rem',
+              padding: '0.8rem 3.5rem 0.8rem 3.5rem',
               textTransform: 'none',
-              fontSize: '1rem',
+              fontSize: '1.625rem',
+              fontWeight: 600,
               color: 'black',
               borderRadius: '0.7rem',
             }}

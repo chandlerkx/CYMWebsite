@@ -31,20 +31,22 @@ const events = [
 
 export default function Events() {
   return (
-    <Box sx={{ backgroundColor: '#E6EFFF', padding: '2rem' }}>
-      <Typography sx={{ color: 'black', fontSize: '2rem', fontWeight: '500', marginBottom: '1rem' }}>
-        Events
-      </Typography>
-      <Typography sx={{ color: 'black', fontSize: '1.5rem', marginBottom: '1rem' }}>
-        Upcoming Events
-      </Typography>
-      <EventCard {...events[0]} />
-      <Typography sx={{ color: 'black', fontSize: '1.5rem', marginBottom: '1rem' }}>
-        Past Events
-      </Typography>
-      <EventCard {...events[1]} />
-      <EventCard {...events[2]} />
-      <EventCard {...events[3]} />
-    </Box>
+    <div style={{backgroundColor: 'inherit', padding: '80px'}}>
+      <Box sx={{ backgroundColor: '#E6EFFF'}}>
+        <Typography sx={{ color: 'black', fontSize: '3.125rem', fontWeight: '500', marginBottom: '1rem' }}>
+          Events
+        </Typography>
+        <Typography sx={{ color: 'black', fontSize: '1.875rem', marginBottom: '1.5rem' }}>
+          Upcoming Events
+        </Typography>
+        <EventCard {...events[0]} />
+        <Typography sx={{ color: 'black', fontSize: '1.875rem', marginBottom: '1rem' }}>
+          Past Events
+        </Typography>
+        <EventCard {...events[1]} />
+        <EventCard {...events[2]} />
+        <EventCard {...events[3]} />
+      </Box>
+    </div>
   );
 }

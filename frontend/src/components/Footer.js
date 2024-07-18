@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Footer() {
   return (
-    <Box sx={{ backgroundColor: '#4A5568', color: 'white', padding: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+    <Box sx={{ backgroundColor: '#4A5568', color: 'white', padding: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'top' }}>
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         <img src="http://via.placeholder.com/100" alt="Logo" style={{ marginRight: '2rem' }} />
       </Box>
@@ -28,10 +28,10 @@ export default function Footer() {
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', marginRight: '1rem' }}>
-          <InstagramIcon />
+          <InstagramIcon sx={{fontSize: '3rem'}} />
         </Link>
         <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" sx={{ color: 'white' }}>
-          <LinkedInIcon />
+          <LinkedInIcon sx={{fontSize: '3rem'}}/>
         </Link>
       </Box>
     </Box>
