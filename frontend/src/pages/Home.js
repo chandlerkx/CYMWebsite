@@ -12,7 +12,7 @@ export default function Home() {
         display: 'flex',
         flexDirection: isMobile ? 'column' : 'row',
         justifyContent: 'space-between',
-        padding: '7rem 2rem 2rem 5rem',
+        padding: '6rem 2rem 2rem 5rem',
       }}
     >
       <Box sx={{ flex: 1 }}>
