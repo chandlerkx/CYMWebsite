@@ -18,7 +18,7 @@ export default function Footer() {
       }}
     >
       <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: { xs: '1rem', sm: '0' } }}>
-        <img src="http://via.placeholder.com/100" alt="Logo" style={{ marginRight: '2rem', width: '80px' }} />
+        <img src="cymhead.png" alt="Logo" style={{ marginRight: '2rem', width: '80px' }} />
       </Box>
       
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: { xs: 'center', sm: 'flex-start' }, marginBottom: { xs: '1rem', sm: '0' } }}>
@@ -42,10 +42,10 @@ export default function Footer() {
       </Box>
       
       <Box sx={{ display: 'flex', alignItems: 'center', marginTop: { xs: '1rem', sm: '0' } }}>
-        <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', marginRight: '1rem' }}>
+        <Link href="https://www.instagram.com/connectingyouthinmed/" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', marginRight: '1rem' }}>
           <InstagramIcon sx={{ fontSize: { xs: '2rem', sm: '3rem' } }} />
         </Link>
-        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" sx={{ color: 'white' }}>
+        <Link href="https://www.linkedin.com/company/connecting-youth-in-med/" target="_blank" rel="noopener noreferrer" sx={{ color: 'white' }}>
           <LinkedInIcon sx={{ fontSize: { xs: '2rem', sm: '3rem' } }} />
         </Link>
       </Box>

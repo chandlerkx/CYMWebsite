@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="#events" underline="none" sx={{ color: 'black', fontSize: '1.375rem', marginRight: '2rem' }}>
             Events
           </Link>
-          <Button variant="contained" sx={{ backgroundColor: '#FFFBED', fontSize: '1.375rem', color: 'black', textTransform: 'none', borderRadius: '0.5rem', dropShadow:'none', '&:hover':{backgroundColor:'#fff0ba'} }}>
+          <Button variant="contained" href="https://linktr.ee/connectingyouthinmed" target="_blank" sx={{ backgroundColor: '#FFFBED', fontSize: '1.375rem', color: 'black', textTransform: 'none', borderRadius: '0.5rem', dropShadow:'none', '&:hover':{backgroundColor:'#fff0ba'} }}>
             Join
           </Button>
         </Box>

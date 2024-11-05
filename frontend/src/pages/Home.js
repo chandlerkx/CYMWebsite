@@ -72,6 +72,8 @@ export default function Home() {
         </Fade>
         <Fade in={true} timeout={2500}>
           <Button
+            href="https://linktr.ee/connectingyouthinmed"
+            target="_blank"
             sx={{
               backgroundColor: '#FFF0BB',
               margin: { xs: '1rem auto 4rem', sm: '1rem 1rem 14rem 3rem' },
