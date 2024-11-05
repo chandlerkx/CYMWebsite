@@ -19,7 +19,7 @@ export default function Home() {
         <Fade in={true} timeout={1000}>
           <Typography
             sx={{
-              color: { xs: 'black', sm: 'blue', md: 'black' },
+              color: { xs: 'black', sm: 'black', md: 'black' },
               fontSize: { xs: '2.5rem', sm: '2rem', md: '2rem' },
               padding: { xs: '7rem 0rem 0rem 3rem', md: '8rem 0rem 0rem 3rem' },
               fontWeight: 520,
@@ -34,7 +34,7 @@ export default function Home() {
         <Fade in={true} timeout={1100}>
           <Typography
             sx={{
-              color: { xs: 'black', sm: 'blue', md: 'black' },
+              color: { xs: 'black', sm: 'black', md: 'black' },
               fontSize: { xs: '2.5rem', sm: '2rem', md: '2rem' },
               padding: { xs: '0rem 0rem 3rem 3rem', md: '0rem 0rem 3rem 3rem' },
               fontWeight: 520,
