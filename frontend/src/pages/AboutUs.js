@@ -1,83 +1,64 @@
-// import React, { PureComponent } from 'react';
-// import { Box, Typography } from '@mui/material';
-
-// export default class AboutUs extends PureComponent {
-//   render() {
-//     return (
-//       <div style={{ backgroundColor: '#E6EFFF', padding: '2rem' }}>
-//         <Typography sx={{ color: 'black', fontSize: '2rem', fontWeight: '500', marginBottom: '1rem' }}>
-//           About Us
-//         </Typography>
-//         <Box sx={{ backgroundColor: '#D2E3FC', borderRadius: '0.5rem', padding: '1.5rem' }}>
-//           <Typography sx={{ color: 'black', fontSize: '1.5rem', fontWeight: '500', marginBottom: '0.5rem' }}>
-//             Mission and Vision <span role="img" aria-label="rocket">🚀</span>
-//           </Typography>
-//           <Typography sx={{ color: 'black', fontSize: '1rem' }}>
-//             When most students hear the term “medicine,” they imagine careers like doctors or nurses, but don’t realize “medicine” also refers to fields such as biomedical engineering, bioethics, pharmaceutics, etc. Our goal is to redefine how the term “medicine” is interpreted. As our organization continues to grow, we envision building an unparalleled foundation for aspiring students in healthcare to explore and develop their interests.
-//           </Typography>
-//         </Box>
-//       </div>
-//     );
-//   }
-// }
-
-import React, { PureComponent } from 'react'
-import { Button } from '@mui/material';
-import {Typography, Box} from '@mui/material';
+import React, { PureComponent } from 'react';
+import { Typography, Box } from '@mui/material';
 import western from '../images/western.png';
 import mac from '../images/mac.png';
 import uoft from '../images/uoft.png';
 
-let missionTitle = "Mission and Vision 🧬"
-let missionMessage = "When most students hear the term “medicine,” they imagine careers like doctors or nurses, but don’t realize “medicine” also refers to fields such as biomedical engineering, bioethics, pharmaceutics, etc. Our goal is to redefine how the term “medicine” is interpreted. As our organization continues to grow, we envision building an unparalleled foundation for aspiring students in healthcare to explore and develop their interests."
+const missionTitle = "Mission and Vision 🧬";
+const missionMessage = "When most students hear the term “medicine,” they imagine careers like doctors or nurses, but don’t realize “medicine” also refers to fields such as biomedical engineering, bioethics, pharmaceutics, etc. Our goal is to redefine how the term “medicine” is interpreted. As our organization continues to grow, we envision building an unparalleled foundation for aspiring students in healthcare to explore and develop their interests.";
 
-const ImageBlock = ({filepath}) => {
-    // let "/"
+export default class AboutUs extends PureComponent {
+  render() {
     return (
-        <div>
-            <img src={western}/>
-        </div>
-    )
-}
-
-export default class AboutUs extends PureComponent{
-
-    render() {
-        return(
-            <div style={{backgroundColor: '#FFFBED', padding: '80px'}}>
-                <div style={{marginBottom: '48px'}}>
-                    <Typography fontWeight={600} fontSize={'2.5rem'}>About Us</Typography>
-                </div>
-                <div style={{borderRadius: '20px', marginBottom: '128px', padding: '60px', backgroundColor: '#FFF6D8'}}>
-                    <Typography marginBottom={'24px'} fontWeight={600} fontSize={'1.875rem'}>{missionTitle}</Typography>
-                    <Typography fontSize={'1.875rem'}>{missionMessage}</Typography>
-                    {/* <img src={western}></img>
-                    <img src='/mac.png'/> */}
-                </div>
-
-                <Typography sx={{ color: 'black', fontSize: '2.5rem', fontWeight: '600', marginBottom: '1rem', }}>
-          Branches
-        </Typography>
-        <Typography sx={{ color: 'black', fontSize: '1.375rem', marginBottom: '2.4rem',}}>
-          Some of our various future affiliations!!
-        </Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', gap: '4.063rem' }}>
-          <Box sx={{ flex: 2, backgroundColor: '#D2E3FC', borderRadius: '1.563rem', padding: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center', height: 300 }}>
-            <img src="western.png" alt="Placeholder" style={{ height: '90%', width: '100%', borderRadius: '0.5rem', objectFit:'contain'}} />
-          </Box>
-          <Box sx={{ flex: 2, backgroundColor: '#D2E3FC', borderRadius: '1.563rem', padding: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '10%' }}>
-            <img src="mac.png" alt="Placeholder" style={{ height: 'auto', width: '100%',borderRadius: '0.5rem', objectFit:'contain' }} />
-          </Box>
-          <Box sx={{ flex: 2, backgroundColor: '#D2E3FC', borderRadius: '1.563rem', padding: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '10%' }}>
-            <img src="uoft.png" alt="Placeholder" style={{ height: 'auto', width: '100%',borderRadius: '0.5rem', objectFit:'contain' }} />
-          </Box>
+      <Box sx={{ backgroundColor: '#FFFBED', padding: { xs: '40px', sm: '80px' } }}>
+        <Box sx={{ marginBottom: { xs: '24px', sm: '48px' } }}>
+          <Typography fontWeight={600} fontSize={{ xs: '1.875rem', sm: '2.5rem' }} textAlign={{ xs: 'center', sm: 'left' }}>
+            About Us
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            borderRadius: '20px',
+            marginBottom: { xs: '64px', sm: '128px' },
+            padding: { xs: '30px', sm: '60px' },
+            backgroundColor: '#FFF6D8',
+            textAlign: { xs: 'center', sm: 'left' },
+          }}
+        >
+          <Typography marginBottom={{ xs: '12px', sm: '24px' }} fontWeight={600} fontSize={{ xs: '1.5rem', sm: '1.875rem' }}>
+            {missionTitle}
+          </Typography>
+          <Typography fontSize={{ xs: '1rem', sm: '1.875rem' }}>
+            {missionMessage}
+          </Typography>
         </Box>
 
-                {/* <div style={{marginBottom: '64px'}}>
-                    <Typography fontWeight={600} variant='h3'>Branches</Typography>
-                    <ImageBlock filepath={'test'}></ImageBlock>
-                </div> */}
-            </div>
-        )
-    }
+        <Typography sx={{ color: 'black', fontSize: { xs: '2rem', sm: '2.5rem' }, fontWeight: '600', marginBottom: '1rem', textAlign: { xs: 'center', sm: 'left' } }}>
+          Branches
+        </Typography>
+        <Typography sx={{ color: 'black', fontSize: { xs: '1rem', sm: '1.375rem' }, marginBottom: '2.4rem', textAlign: { xs: 'center', sm: 'left' } }}>
+          Some of our various future affiliations!!
+        </Typography>
+
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', sm: 'row' },
+            justifyContent: 'space-between',
+            gap: { xs: '1rem', sm: '4.063rem' },
+          }}
+        >
+          <Box sx={{ flex: 2, backgroundColor: '#D2E3FC', borderRadius: '1.563rem', padding: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', height: { xs: 150, sm: 300 } }}>
+            <img src={western} alt="Western University" style={{ height: '90%', width: '100%', borderRadius: '0.5rem', objectFit: 'contain' }} />
+          </Box>
+          <Box sx={{ flex: 2, backgroundColor: '#D2E3FC', borderRadius: '1.563rem', padding: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', height: { xs: 150, sm: 300 } }}>
+            <img src={mac} alt="McMaster University" style={{ height: '90%', width: '100%', borderRadius: '0.5rem', objectFit: 'contain' }} />
+          </Box>
+          <Box sx={{ flex: 2, backgroundColor: '#D2E3FC', borderRadius: '1.563rem', padding: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center', height: { xs: 150, sm: 300 } }}>
+            <img src={uoft} alt="University of Toronto" style={{ height: '90%', width: '100%', borderRadius: '0.5rem', objectFit: 'contain' }} />
+          </Box>
+        </Box>
+      </Box>
+    );
+  }
 }
