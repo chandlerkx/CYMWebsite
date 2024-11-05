@@ -8,3 +8,7 @@ body{
     background-color:#FFFBED;
     font-family:Gentium Plus, sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}

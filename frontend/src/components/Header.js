@@ -9,14 +9,14 @@ export default function Header() {
           <img src="cymlogo.png" alt="Logo" style={{ marginRight: '1rem' }} />
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Link href="#" underline="none" sx={{ color: 'black', fontSize: '1.375rem', marginRight: '2rem' }}>
+          <Link href="#home" underline="none" sx={{ color: 'black', fontSize: '1.375rem', marginRight: '2rem' }}>
+            Home
+          </Link>
+          <Link href="#about" underline="none" sx={{ color: 'black', fontSize: '1.375rem', marginRight: '2rem' }}>
             About
           </Link>
-          <Link href="#" underline="none" sx={{ color: 'black', fontSize: '1.375rem', marginRight: '2rem' }}>
+          <Link href="#events" underline="none" sx={{ color: 'black', fontSize: '1.375rem', marginRight: '2rem' }}>
             Events
-          </Link>
-          <Link href="#" underline="none" sx={{ color: 'black', fontSize: '1.375rem', marginRight: '2rem' }}>
-            Community
           </Link>
           <Button variant="contained" sx={{ backgroundColor: '#FFFBED', fontSize: '1.375rem', color: 'black', textTransform: 'none', borderRadius: '0.5rem', dropShadow:'none', '&:hover':{backgroundColor:'#fff0ba'} }}>
             Join

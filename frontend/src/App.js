@@ -11,12 +11,21 @@ import Header from './components/Header';
 function App() {
   return (
     <div className="App">
+      <Header />
 
-      <Header/>
-      <Home/>
-      <About/>
-      <Events/>
-      <Footer/>
+      <div id="home">
+        <Home />
+      </div>
+
+      <div id="about">
+        <About />
+      </div>
+
+      <div id="events">
+        <Events />
+      </div>
+
+      <Footer />
     </div>
   );
 }
