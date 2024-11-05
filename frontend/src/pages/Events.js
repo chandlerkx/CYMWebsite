@@ -31,9 +31,9 @@ const events = [
 
 export default function Events() {
   return (
-    <div style={{backgroundColor: 'inherit', padding: '80px'}}>
-      <Box sx={{ backgroundColor: '#E6EFFF'}}>
-        <Typography sx={{ color: 'black', fontSize: '3.125rem', fontWeight: '500', marginBottom: '1rem' }}>
+    <div style={{backgroundColor: '#FFFBED', padding: '80px'}}>
+      <Box sx={{ backgroundColor: '#FFFBED'}}>
+        <Typography sx={{ color: 'black', fontSize: '2.5rem', fontWeight: '600', marginBottom: '1rem' }}>  
           Events
         </Typography>
         <Typography sx={{ color: 'black', fontSize: '1.875rem', marginBottom: '1.5rem' }}>

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Box
       sx={{
-        backgroundColor: '#E6EFFF',
+        backgroundColor: '#FFFBED',
         display: 'flex',
         flexDirection: isMobile ? 'column' : 'row',
         justifyContent: 'space-between',
@@ -21,14 +21,30 @@ export default function Home() {
             sx={{
               color: { xs: 'black', sm: 'blue', md: 'black' },
               fontSize: { xs: '2.5rem', sm: '2rem', md: '2rem' },
-              padding: { xs: '7rem 0rem 3rem 3rem', md: '8rem 0rem 3rem 3rem' },
-              fontWeight: '520',
+              padding: { xs: '7rem 0rem 0rem 3rem', md: '8rem 0rem 0rem 3rem' },
+              fontWeight: 520,
               fontFamily: 'Inter',
-              fontSize:'3.75rem'
+              fontSize: '3.4rem',
             }}
             variant="h1"
           >
-            Welcome to Connecting Youth in Med
+            Welcome to
+          </Typography>
+        </Fade>
+        <Fade in={true} timeout={1100}>
+          <Typography
+            sx={{
+              color: { xs: 'black', sm: 'blue', md: 'black' },
+              fontSize: { xs: '2.5rem', sm: '2rem', md: '2rem' },
+              padding: { xs: '0rem 0rem 3rem 3rem', md: '0rem 0rem 3rem 3rem' },
+              fontWeight: 520,
+              fontFamily: 'Inter',
+              fontSize: '3.4rem',
+              width:'100%'
+            }}
+            variant="h1"
+          >
+            Connecting Youth in Med
           </Typography>
         </Fade>
         <Fade in={true} timeout={1500}>
@@ -56,7 +72,7 @@ export default function Home() {
         <Fade in={true} timeout={2500}>
           <Button
             sx={{
-              backgroundColor: '#A0C1FE',
+              backgroundColor: '#FFF0BB',
               margin: '1rem 1rem 14rem 3rem',
               padding: '0.8rem 3.5rem 0.8rem 3.5rem',
               textTransform: 'none',
@@ -64,6 +80,7 @@ export default function Home() {
               fontWeight: 600,
               color: 'black',
               borderRadius: '0.7rem',
+              '&:hover': { backgroundColor: '#ffe99b' },
             }}
           >
             Join Now
@@ -79,7 +96,7 @@ export default function Home() {
           marginTop: isMobile ? '2rem' : '0',
         }}
       >
-        <img style={{margin:'4rem 0 0 0rem'}} src="http://via.placeholder.com/200x300" alt="Placeholder" />
+        <img style={{ margin: '4rem 0 0 0rem' }} src="cymlogo2.png" alt="CYM Logo" />
       </Box>
     </Box>
   );
